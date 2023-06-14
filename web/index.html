@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1> cloud-based picture and associated information
+    storage and retrieval system</h1>
+<h1>Yubo Yang</h1>
+<h1>1002101126</h1>
+<img src="./static/images/cat.jpeg" alt="User Image">
+<h3>File Upload to insert data</h3>
+<form action="/insertdata" method="post" enctype="multipart/form-data">
+    <input type="file" name="data_file" />
+    <input type="submit" />
+</form>
+<h3>Display Records</h3>
+<form action="/getrecords" method="post" enctype="multipart/form-data">
+    <input type="submit" />
+</form>
+</form>
+<h3>Delete all Records</h3>
+<form action="/deleterecords" method="post" enctype="multipart/form-data">
+    <input type="submit" />
+</form>
+<h3>Image Upload</h3>
+<h3></h3>
+<form action="/uploadimage" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Name to display picture</h3>
+<form action="/searchname" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <input type="submit" />
+</form>
+
+<br>
+<h3>Enter Room to display picture</h3>
+<form action="/searchroom" method="post" enctype="multipart/form-data">
+    <label>Enter Room:</label>
+    <input type="text" name="roomid" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Salary to display pictures</h3>
+<form action="/searchpicture" method="post" enctype="multipart/form-data">
+    <label>Enter Salary:</label>
+    <input type="text" name="salary" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter teln range to display pictures</h3>
+<form action="/searchtelrange" method="post" enctype="multipart/form-data">
+    <label>Enter teln range:</label>
+    <input type="text" name="telnx" />-<input type="text" name="telns" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Name to add picture</h3>
+<form action="/addpicture" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <label>Upload Picture:</label>
+    <input type="file" name="image" />
+    <input type="submit" />
+</form>
+
+<br>
+<h3>Enter Name to delete</h3>
+<form action="/removename" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="remove_name" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Keyword to Change</h3>
+<form action="/changekeyword" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <label>Enter Keyword:</label>
+    <input type="text" name="keyword" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Salary to Change</h3>
+<form action="/changesalary" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <label>Enter Salary:</label>
+    <input type="text" name="salary" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter Room to Change</h3>
+<form action="/changeroom" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <label>Enter Room:</label>
+    <input type="text" name="room" />
+    <input type="submit" />
+</form>
+<br>
+<h3>Enter tel-number to Change</h3>
+<form action="/changetel" method="post" enctype="multipart/form-data">
+    <label>Enter Name:</label>
+    <input type="text" name="name" />
+    <label>Enter tel-number:</label>
+    <input type="text" name="tel" />
+    <input type="submit" />
+</form>
+</body>
+</html>
